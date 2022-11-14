@@ -1,22 +1,18 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
   text: document.getElementById("text"),
-  box: document.getElementById("container-box"),
-  input: document.querySelector("input"),
-  input2: document.querySelector("input2"),
+  form: document.getElementById("mainForm"),
+  Name: document.querySelector(`#Name`),
+  DOB: document.querySelector(`#DOB`),
 };
 
 DOMSelectors.button.addEventListener("click", function () {
-  let input = DOMSelectors.input.value;
-  DOMSelectors.box.insertAdjacentHTML("afterend", `<p>${input}</p>`);
-  /*DOMSelectors.button.insertAdjacentHTML("afterend", `<p>${input}</p>`);*/
-  DOMSelectors.input.value = "";
-});
-console.log(DOMSelectors.input.value);
+  let Name = DOMSelectors.Name.value;
+  let DOB = DOMSelectors.DOB.value;
+  DOMSelectors.form.insertAdjacentHTML("afterend", `<p>${Name}</p>`);
 
-DOMSelectors.button.addEventListener("click", function () {
-  let input2 = DOMSelectors.input2.value2;
-  DOMSelectors.box.insertAdjacentHTML("beforeend", `<p>${input2}</p>`);
-  /*DOMSelectors.button.insertAdjacentHTML("afterend", `<p>${input}</p>`);*/
-  DOMSelectors.input2.value = "";
+  DOMSelectors.Name.value = "";
+  DOMSelectors.DOB.value = "";
 });
+console.log(DOMSelectors.Name.value);
+console.log(DOMSelectors.DOB.value);
