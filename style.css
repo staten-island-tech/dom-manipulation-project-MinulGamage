@@ -7,11 +7,16 @@
     text-align: center;
   }
 
-  .Name {
+  .first {
     align-items: center;
     text-align: center;
   }
 
+  .last {
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+  }
   .DOB {
     align-items: center;
     text-align: center;
@@ -20,5 +25,9 @@
 
   .btn {
     align-items: center;
+    text-align: center;
+  }
+
+  .title {
     text-align: center;
   }
