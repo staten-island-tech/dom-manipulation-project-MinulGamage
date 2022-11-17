@@ -6,16 +6,18 @@ const DOMSelectors = {
   Last: document.querySelector(`#Last`),
   DOB: document.querySelector(`#DOB`),
   Remove: document.getElementById("Remove"),
+  value: document.getElementById("value"),
 };
 console.log(DOMSelectors.Name);
 console.log(DOMSelectors.DOB);
 DOMSelectors.button.addEventListener("click", function () {
-  let First = DOMSelectors.First.value;
-  let Last = DOMSelectors.Last.value;
-  let DOB = DOMSelectors.DOB.value;
+  const First = DOMSelectors.First.value;
+  const Last = DOMSelectors.Last.value;
+  const DOB = DOMSelectors.DOB.value;
+  //make object from values
   DOMSelectors.form.insertAdjacentHTML(
     "afterend",
-    `<p id=Value> First Name: ${First} Last Name: ${Last} DOB: ${DOB}  <button onclick="Remove()" type="button" id="Remove">Remove</button> </p> `
+    `<p id=value> First Name: ${First}, Last Name: ${Last}, DOB: ${DOB}  <button type="button" id="Remove">Remove</button> </p> `
   );
 
   DOMSelectors.First.value = "";
@@ -23,9 +25,4 @@ DOMSelectors.button.addEventListener("click", function () {
   DOMSelectors.DOB.value = "";
 });
 
-function Remove() {
-  const element = document.getElementById("Value");
-  element.remove();
-}
-
-e.preventDefault();
+const Values = document.querySelectorAll("remove");
