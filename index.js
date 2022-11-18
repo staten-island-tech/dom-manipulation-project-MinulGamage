@@ -11,18 +11,23 @@ const DOMSelectors = {
 console.log(DOMSelectors.Name);
 console.log(DOMSelectors.DOB);
 DOMSelectors.button.addEventListener("click", function () {
-  const First = DOMSelectors.First.value;
-  const Last = DOMSelectors.Last.value;
-  const DOB = DOMSelectors.DOB.value;
-  //make object from values
+  const info = {
+    firstname: DOMSelectors.First.value,
+    lastname: DOMSelectors.Last.value,
+    DOB: DOMSelectors.DOB.value,
+  };
   DOMSelectors.form.insertAdjacentHTML(
     "afterend",
-    `<p id=value> First Name: ${First}, Last Name: ${Last}, DOB: ${DOB}  <button type="button" id="Remove">Remove</button> </p> `
-  );
 
+    `<p id=value> First Name: ${info.firstname}, Last Name: ${info.lastname}, DOB: ${info.DOB}  <button type="button" id="Remove">Remove</button> </p> `
+  );
+});
+//make object from values
+
+DOMSelectors.button.addEventListener("click", function clearinput() {
   DOMSelectors.First.value = "";
   DOMSelectors.Last.value = "";
   DOMSelectors.DOB.value = "";
 });
 
-const Values = document.querySelectorAll("remove");
+const valuelist [ ];
