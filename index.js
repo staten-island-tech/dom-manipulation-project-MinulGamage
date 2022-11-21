@@ -16,11 +16,23 @@ DOMSelectors.button.addEventListener("click", function () {
     lastname: DOMSelectors.Last.value,
     DOB: DOMSelectors.DOB.value,
   };
+
+  const values = [{ First: "", Last: "", DOB: "" }];
+  console.log(values);
+
+  values.forEach((values) => console.log(values.First));
+  values.forEach((values) => console.log(values.Last));
+  values.forEach((values) => console.log(values.DOB));
   DOMSelectors.form.insertAdjacentHTML(
     "afterend",
 
-    `<p id=value> First Name: ${info.firstname}, Last Name: ${info.lastname}, DOB: ${info.DOB}  <button type="button" id="Remove">Remove</button> </p> `
+    `<p id=Remove> First Name: ${info.firstname}, Last Name: ${info.lastname}, DOB: ${info.DOB}  <button type="button" id="removeButton">Remove</button> </p> `
   );
+  let button = document.getElementById("removeButton");
+  button.addEventListener("click", function removeCard(event) {
+    const element = document.getElementById("Remove");
+    element.remove();
+  });
 });
 //make object from values
 
@@ -29,5 +41,3 @@ DOMSelectors.button.addEventListener("click", function clearinput() {
   DOMSelectors.Last.value = "";
   DOMSelectors.DOB.value = "";
 });
-
-const valuelist [ ];
