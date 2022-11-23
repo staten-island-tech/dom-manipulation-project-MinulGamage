@@ -23,6 +23,7 @@ DOMSelectors.button.addEventListener("click", function () {
   values.forEach((values) => console.log(values.First));
   values.forEach((values) => console.log(values.Last));
   values.forEach((values) => console.log(values.DOB));
+
   DOMSelectors.form.insertAdjacentHTML(
     "afterend",
 
