@@ -38,7 +38,7 @@ DOMSelectors.button.addEventListener("click", function () {
   const button = document.getElementById("removeBtn");
   document.querySelectorAll(".removeBtn");
   button.addEventListener("click", function removeCard(event) {
-    const values = document.getElementById("Info");
+    const values = document.getElementById("Card");
     event.target.remove(values);
   });
 });
