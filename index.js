@@ -7,8 +7,10 @@ const DOMSelectors = {
   Remove: document.getElementById("Remove"),
   DOB: document.querySelector(`#DOB`),
 };
+
 console.log(DOMSelectors.Name);
 console.log(DOMSelectors.DOB);
+
 DOMSelectors.button.addEventListener("click", function () {
   const info = {
     firstname: DOMSelectors.First.value,
@@ -26,10 +28,15 @@ DOMSelectors.button.addEventListener("click", function () {
   DOMSelectors.form.insertAdjacentHTML(
     "afterend",
 
-    `<div class="Card" id=""Info> <p>First Name: ${info.firstname}, Last Name: ${info.lastname}, DOB: ${info.DOB}  <button type="button" id="removeBtn">Remove</button> </p> </div>`
+    `<div class="Card" id="Info"> 
+    <p>First Name: ${info.firstname}, 
+    Last Name: ${info.lastname}, 
+    DOB: ${info.DOB}  
+    <button type="button" id="removeBtn">Remove</button> </p> 
+    </div>`
   );
 
-  DOMSelectors.button.addEventListener("click", function clearinput() {
+ function clearinput() {
     DOMSelectors.First.value = "";
     DOMSelectors.Last.value = "";
     DOMSelectors.DOB.value = "";
