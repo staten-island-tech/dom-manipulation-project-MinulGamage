@@ -1,4 +1,4 @@
-/* const DOMSelectors = {
+ const DOMSelectors = {
   button: document.getElementById("btn"),
   text: document.getElementById("text"),
   form: document.getElementById("mainForm"),
@@ -18,14 +18,14 @@ DOMSelectors.button.addEventListener("click", function () {
     DOB: DOMSelectors.DOB.value,
   };
 
-  /*   const values = [{ First: "", Last: "", DOB: "" }];
+   const values = [{ First: "", Last: "", DOB: "" }];
   console.log(values);
 
   values.forEach((values) => console.log(values.First));
   values.forEach((values) => console.log(values.Last));
   values.forEach((values) => console.log(values.DOB));
- */
-/* DOMSelectors.form.insertAdjacentHTML(
+ 
+  function CardCreator() {DOMSelectors.form.insertAdjacentHTML(
     "afterend",
 
     `<div class="Card" id="Info"> 
@@ -34,7 +34,7 @@ DOMSelectors.button.addEventListener("click", function () {
     DOB: ${info.DOB}  
     <button type="button" id="removeBtn">Remove</button> </p> 
     </div>`
-  );
+  )};
 
  function clearinput() {
     DOMSelectors.First.value = "";
@@ -47,8 +47,7 @@ DOMSelectors.button.addEventListener("click", function () {
   button.addEventListener("click", function removeCard(event) {
     const values = document.getElementById("Card");
     event.target.remove(values);
-  });
-}); */
+  }); 
 //make object from values
 
 /* let removeButton = document.querySelectorAll(".remove");
@@ -56,4 +55,4 @@ removeButton.forEach((button) => {
   button.addEventListener("click", function (event) {
     event.target.remove();
   });
-}); */
+});  */
