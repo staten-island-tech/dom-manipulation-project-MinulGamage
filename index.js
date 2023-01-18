@@ -1,4 +1,4 @@
-const DOMSelectors = {
+/* const DOMSelectors = {
   button: document.getElementById("btn"),
   text: document.getElementById("text"),
   form: document.getElementById("mainForm"),
@@ -25,7 +25,7 @@ DOMSelectors.button.addEventListener("click", function () {
   values.forEach((values) => console.log(values.Last));
   values.forEach((values) => console.log(values.DOB));
  */
-  DOMSelectors.form.insertAdjacentHTML(
+/* DOMSelectors.form.insertAdjacentHTML(
     "afterend",
 
     `<div class="Card" id="Info"> 
@@ -48,7 +48,7 @@ DOMSelectors.button.addEventListener("click", function () {
     const values = document.getElementById("Card");
     event.target.remove(values);
   });
-});
+}); */
 //make object from values
 
 /* let removeButton = document.querySelectorAll(".remove");
@@ -56,5 +56,4 @@ removeButton.forEach((button) => {
   button.addEventListener("click", function (event) {
     event.target.remove();
   });
-});
- */
+}); */
